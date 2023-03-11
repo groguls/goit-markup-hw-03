@@ -20,10 +20,22 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-text-color);
   background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
 }
 
 .hidden {
@@ -36,6 +48,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .section-caption {
@@ -78,29 +92,56 @@ body {
   background-color: var(--ocean-pressed-color);
 }
 
-/* --- Header --- */
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+/* ---------- Header ---------- */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
 
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  /* autocheck error */
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-brand-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-element {
   color: var(--navyblue-dark-color);
 }
 
+.nav-list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue-dark-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -108,15 +149,20 @@ body {
   color: var(--ocean-pressed-color);
 }
 
-/* .nav-list .link.active {
-  color: var(--ocean-pressed-color);
-} */
-
 .adress {
   font-style: normal;
+  margin-left: auto;
 }
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
 .address-link {
   color: var(--slate-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-link:hover,
@@ -145,7 +191,6 @@ body {
 
 .team .section-title,
 .team .section-text {
-  background-color: var(--main-color);
   text-align: center;
 }
 
