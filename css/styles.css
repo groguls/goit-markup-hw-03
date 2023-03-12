@@ -200,8 +200,6 @@ ul {
 .hero-section {
   background-color: var(--navyblue-dark-color);
   text-align: center;
-}
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -264,6 +262,7 @@ ul {
 }
 
 .team-card {
+  flex-basis: calc((100% - 3 * 24px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -275,18 +274,24 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
+.section-title {
+  margin-bottom: 8px;
+}
+
 /* --- Footer --- */
 
 .footer {
   background-color: var(--navyblue-dark-color);
-}
-
-.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
+.footer-container {
+  width: 264px;
+}
+
 .footer-link {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -294,6 +299,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-brand-color);
+  margin-bottom: 16px;
 }
 
 .footer-element {
@@ -302,8 +308,6 @@ ul {
 
 .footer-text {
   color: var(--cornflower-accent-color);
-  max-width: 264px;
-  margin-top: 16px;
 }
 
 /* --- Portfolio page --- */
@@ -327,7 +331,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border: none;
+  border: 1px solid var(--ocean-pressed-color);
 }
 
 .button-list {
