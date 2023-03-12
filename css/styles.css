@@ -294,7 +294,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-brand-color);
-  margin-bottom: 16px;
 }
 
 .footer-element {
@@ -304,7 +303,7 @@ ul {
 .footer-text {
   color: var(--cornflower-accent-color);
   max-width: 264px;
-  /* margin-top: 16px; */
+  margin-top: 16px;
 }
 
 /* --- Portfolio page --- */
